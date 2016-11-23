@@ -9,7 +9,8 @@
     var CurrencyEur = 0.0146;
     var CurrencyUsd = 0.0154;
     var Rur = +prompt('Type amount');
-    alert('It is ' + CurrencyEur*Rur + ' EUR or ' + CurrencyUsd*Rur + ' USD');
+    alert('It is ' + Math.round(CurrencyEur*Rur).toFixed(2) + ' EUR or \n' + CurrencyUsd*Rur + ' USD');
+    //матчраунд округляет до ближайшего целого, \n новая строка, тофиксед округляет до ()
 </script>
 </body>
 </html>
